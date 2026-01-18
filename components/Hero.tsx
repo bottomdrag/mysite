@@ -26,6 +26,21 @@ const Hero: React.FC = () => {
             Your browser does not support the video tag.
           </video>
 
+          {/* Cinematic Overlay - Surprise! */}
+          <div className="absolute inset-0 z-10 pointer-events-none">
+            {/* Soft vignette to focus on the center character */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(30,13,17,0.4)_100%)]"></div>
+            
+            {/* Subtle CRT-style scanlines for a technical/mystical feel */}
+            <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(245,188,140,0.1)_50%,transparent_50%)] bg-[length:100%_4px]"></div>
+            
+            {/* Floating particles/dust effect (simulated with a soft gradient) */}
+            <div className="absolute inset-0 opacity-[0.1] mix-blend-screen bg-[radial-gradient(rgba(245,188,140,0.2)_1px,transparent_1px)] bg-[length:40px_40px]"></div>
+            
+            {/* Red accent glow in the corners to match the border */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_0%_0%,rgba(175,0,13,0.15),transparent_40%),radial-gradient(circle_at_100%_100%,rgba(175,0,13,0.15),transparent_40%)]"></div>
+          </div>
+
           {/* Decorative Corner Accents - Higher Z-index to stay on top */}
           <div className="absolute top-0 left-0 w-8 h-8 border-t-4 border-l-4 border-[#af000d] z-20"></div>
           <div className="absolute top-0 right-0 w-8 h-8 border-t-4 border-r-4 border-[#af000d] z-20"></div>
