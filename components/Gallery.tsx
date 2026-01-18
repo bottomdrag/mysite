@@ -58,21 +58,21 @@ const GifEmbed: React.FC<GifEmbedProps> = ({ gifUrl, staticUrl, alt }) => {
 };
 
 const Gallery: React.FC = () => {
-  // Collection of 8 unique Hu Tao themed Tenor IDs
-  const tenorIds = [
-    "pL-Q9N6pXm4AAAAd", // Hu Tao Wave
-    "3X6Y-p9-Y4EAAAAd", // Hu Tao Dance
-    "f_B97m9O_iUAAAAd", // Hu Tao Running
-    "7X_Y-p9-Y4EAAAAd", // Hu Tao Ghost
-    "9X_Y-p9-Y4EAAAAd", // Hu Tao Smile
-    "1X_Y-p9-Y4EAAAAd", // Hu Tao Winking
-    "5X_Y-p9-Y4EAAAAd", // Hu Tao Surprised
-    "0X_Y-p9-Y4EAAAAd"  // Hu Tao Laughing
+  // Collection of 8 unique Hu Tao themed Tenor GIF links
+  const tenorLinks = [
+    "https://media.tenor.com/n5ODzD2kSCgAAAAi/hu-tao-genshin.gif",
+    "https://media.tenor.com/5NJRMfcMXQUAAAAi/hu-tao-pat.gif",
+    "https://media.tenor.com/hmYVvHn6-McAAAAi/genshin-impact-hu-tao.gif",
+    "https://media.tenor.com/Lr0fXaYf_GkAAAAi/emote-emoji.gif",
+    "https://media.tenor.com/jYyZZb7AuyQAAAAi/emote-emoji.gif",
+    "https://media.tenor.com/wqoGsAHD1ucAAAAi/1.gif",
+    "https://media.tenor.com/Ic7rea5CARYAAAAi/hu-tao.gif",
+    "https://media.tenor.com/DlDOGVVRKAUAAAAi/emote-emoji.gif"
   ];
 
-  const galleryItems = tenorIds.map((id, index) => ({
-    gifUrl: `https://media.tenor.com/${id}/tenor.gif`,
-    staticUrl: `https://media.tenor.com/${id}/tenor.gif`, // Tenor doesn't have a simple "still" URL like Giphy, so we use the same or a thumbnail if known
+  const galleryItems = tenorLinks.map((link, index) => ({
+    gifUrl: link,
+    staticUrl: link, // Using the same link for simplicity as Tenor links are direct
     alt: `Animation ${index + 1}`
   }));
 
