@@ -62,7 +62,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           {/* Square Logo - Responsive Size */}
           <div className="w-9 h-9 sm:w-12 h-12 border border-[#af000d]/50 overflow-hidden bg-[#1e0d11]">
             <img 
-              src="https://picsum.photos/seed/brand/100" 
+              src="/attached_assets/G1eFOyPaoAIZoHL_1768773066068.png" 
               alt="Logo" 
               className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
             />
