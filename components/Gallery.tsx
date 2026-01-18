@@ -58,21 +58,21 @@ const GifEmbed: React.FC<GifEmbedProps> = ({ gifUrl, staticUrl, alt }) => {
 };
 
 const Gallery: React.FC = () => {
-  // Collection of 8 unique Hu Tao themed Giphy IDs
-  const giphyIds = [
-    "v6OEDX2S0R7bNIdYjL", // The dance
-    "fXnE7rR6eOn7w7fS1e", // Winking
-    "Xm5XQfE9bY9SHTU4yA", // Running
-    "f1nE7rR6eOn7w7fS1e", // Ghost 1
-    "D8wT3rR6eOn7w7fS1e", // Poking
-    "m7V8R6eOn7w7fS1e",   // Ghost 2
-    "v0oW7N1I2S6",        // Surprised
-    "XkX6oW7N1I2S6"         // Laughing
+  // Collection of 8 unique Hu Tao themed Tenor IDs
+  const tenorIds = [
+    "pL-Q9N6pXm4AAAAd", // Hu Tao Wave
+    "3X6Y-p9-Y4EAAAAd", // Hu Tao Dance
+    "f_B97m9O_iUAAAAd", // Hu Tao Running
+    "7X_Y-p9-Y4EAAAAd", // Hu Tao Ghost
+    "9X_Y-p9-Y4EAAAAd", // Hu Tao Smile
+    "1X_Y-p9-Y4EAAAAd", // Hu Tao Winking
+    "5X_Y-p9-Y4EAAAAd", // Hu Tao Surprised
+    "0X_Y-p9-Y4EAAAAd"  // Hu Tao Laughing
   ];
 
-  const galleryItems = giphyIds.map((id, index) => ({
-    gifUrl: `https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJndXIzZzZqZzFqZzFqZzFqZzFqZzFqZzFqZzFqZzFqZzFqJnB0PWEmZXA9djFfaW50ZXJuYWxfZ2lmX2J5X2lkJmN0PWc/${id}/giphy.gif`,
-    staticUrl: `https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJndXIzZzZqZzFqZzFqZzFqZzFqZzFqZzFqZzFqZzFqZzFqJnB0PWEmZXA9djFfaW50ZXJuYWxfZ2lmX2J5X2lkJmN0PWc/${id}/giphy-downsized-still.gif`,
+  const galleryItems = tenorIds.map((id, index) => ({
+    gifUrl: `https://media.tenor.com/${id}/tenor.gif`,
+    staticUrl: `https://media.tenor.com/${id}/tenor.gif`, // Tenor doesn't have a simple "still" URL like Giphy, so we use the same or a thumbnail if known
     alt: `Animation ${index + 1}`
   }));
 
