@@ -68,7 +68,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           {/* Square Logo - Responsive Size */}
           <div className="w-12 h-12 sm:w-16 h-16 overflow-hidden bg-transparent">
             <img 
-              src="/attached_assets/G1eFOyPaoAIZoHL_1768773066068.png" 
+              src="/logo.png" 
               alt="Logo" 
               className="w-full h-full object-cover opacity-100 group-hover:opacity-90 transition-opacity"
             />
