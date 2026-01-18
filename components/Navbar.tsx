@@ -52,6 +52,12 @@ const Navbar: React.FC<NavbarProps> = () => {
       icon: 'fas fa-mug-hot',
       url: 'https://ko-fi.com/bottomdrag',
       clickable: true,
+    },
+    {
+      label: 'hutaoonct@gmail.com',
+      icon: 'fa-brands fa-google',
+      url: 'mailto:hutaoonct@gmail.com',
+      clickable: true,
     }
   ];
 
@@ -118,9 +124,6 @@ const Navbar: React.FC<NavbarProps> = () => {
                   )
                 ))}
               </div>
-              
-              {/* Decorative base of dropdown */}
-              <div className="h-1 bg-gradient-to-r from-[#f5bc8c]/0 via-[#f5bc8c]/20 to-[#f5bc8c]/0"></div>
             </div>
           )}
         </div>
