@@ -89,7 +89,7 @@ const Navbar: React.FC<NavbarProps> = () => {
 
           {/* Dropdown Menu - Optimized Width for Mobile */}
           {isDropdownOpen && (
-            <div className="absolute right-0 mt-3 w-56 sm:w-64 bg-[#1e0d11] border border-[#af000d]/40 shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
+            <div className="absolute right-0 mt-3 w-56 sm:w-64 bg-[#1e0d11] border border-[#f5bc8c]/10 shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
               <div className="py-1">
                 {socialLinks.map((link, index) => (
                   link.clickable ? (
@@ -98,9 +98,9 @@ const Navbar: React.FC<NavbarProps> = () => {
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-3 sm:space-x-4 px-4 sm:px-6 py-3 sm:py-4 hover:bg-[#af000d]/20 transition-colors group"
+                      className="flex items-center space-x-3 sm:space-x-4 px-4 sm:px-6 py-3 sm:py-4 hover:bg-[#f5bc8c]/5 transition-colors group"
                     >
-                      <div className="w-7 h-7 sm:w-8 h-8 rounded-full bg-[#f5bc8c] flex items-center justify-center transition-transform group-hover:scale-110 shadow-lg shrink-0">
+                      <div className="w-7 h-7 sm:w-8 h-8 bg-[#f5bc8c] flex items-center justify-center transition-transform group-hover:scale-110 shadow-lg shrink-0">
                         <i className={`${link.icon} text-black text-xs sm:text-sm`}></i>
                       </div>
                       <span className="marcellus text-[13px] sm:text-sm text-[#f5bc8c]/80 group-hover:text-[#f5bc8c] tracking-wider truncate">{link.label}</span>
@@ -110,7 +110,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                       key={index}
                       className="flex items-center space-x-3 sm:space-x-4 px-4 sm:px-6 py-3 sm:py-4 opacity-40 cursor-not-allowed"
                     >
-                      <div className="w-7 h-7 sm:w-8 h-8 rounded-full bg-[#f5bc8c] flex items-center justify-center shrink-0">
+                      <div className="w-7 h-7 sm:w-8 h-8 bg-[#f5bc8c] flex items-center justify-center shrink-0">
                         <i className={`${link.icon} text-black text-xs sm:text-sm`}></i>
                       </div>
                       <span className="marcellus text-[13px] sm:text-sm text-[#f5bc8c]/80 tracking-wider truncate">{link.label}</span>
@@ -120,7 +120,7 @@ const Navbar: React.FC<NavbarProps> = () => {
               </div>
               
               {/* Decorative base of dropdown */}
-              <div className="h-1 bg-gradient-to-r from-[#af000d]/0 via-[#af000d] to-[#af000d]/0"></div>
+              <div className="h-1 bg-gradient-to-r from-[#f5bc8c]/0 via-[#f5bc8c]/20 to-[#f5bc8c]/0"></div>
             </div>
           )}
         </div>
