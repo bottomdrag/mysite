@@ -60,11 +60,11 @@ const Navbar: React.FC<NavbarProps> = () => {
       <div className="w-full flex items-center justify-between bg-[#1e0d11] px-4 sm:px-12 py-4 sm:py-7 border-b border-[#f5bc8c]/10 shadow-xl">
         <div className="flex items-center space-x-3 sm:space-x-4 cursor-pointer group shrink-0" onClick={() => scrollTo('home')}>
           {/* Square Logo - Responsive Size */}
-          <div className="w-9 h-9 sm:w-12 h-12 border border-[#af000d]/50 overflow-hidden bg-[#1e0d11]">
+          <div className="w-12 h-12 sm:w-16 h-16 overflow-hidden bg-transparent">
             <img 
               src="/attached_assets/G1eFOyPaoAIZoHL_1768773066068.png" 
               alt="Logo" 
-              className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+              className="w-full h-full object-cover opacity-100 group-hover:opacity-90 transition-opacity"
             />
           </div>
           <span className="font-bold text-xl sm:text-3xl tracking-[0.1em] text-[#f5bc8c] marcellus lowercase">
