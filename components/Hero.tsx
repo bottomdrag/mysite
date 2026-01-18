@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
             loop 
             muted 
             playsInline 
-            className="absolute inset-0 w-full h-full object-cover opacity-60 grayscale-[0.2]"
+            className="absolute inset-0 w-full h-full object-cover"
           >
             <source 
               src="/attached_assets/GlKJAGLPwEpdHVpE_1768772949095.mp4" 
@@ -26,17 +26,11 @@ const Hero: React.FC = () => {
             Your browser does not support the video tag.
           </video>
 
-          {/* Darker Gradient Overlay for Text Readability and Depth */}
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1e0d11]/20 to-[#1e0d11]/80"></div>
-          
           {/* Decorative Corner Accents - Higher Z-index to stay on top */}
           <div className="absolute top-0 left-0 w-8 h-8 border-t-4 border-l-4 border-[#af000d] z-20"></div>
           <div className="absolute top-0 right-0 w-8 h-8 border-t-4 border-r-4 border-[#af000d] z-20"></div>
           <div className="absolute bottom-0 left-0 w-8 h-8 border-b-4 border-l-4 border-[#af000d] z-20"></div>
           <div className="absolute bottom-0 right-0 w-8 h-8 border-b-4 border-r-4 border-[#af000d] z-20"></div>
-          
-          {/* Subtle Glow Overlay */}
-          <div className="absolute inset-0 bg-[#af000d]/10 mix-blend-overlay pointer-events-none"></div>
         </div>
         
         {/* Eye-catching Quote Area */}
