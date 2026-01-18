@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
       server: {
         port: 5000,
         host: '0.0.0.0',
-        allowedHosts: 'all',
+        allowedHosts: ['all', 'db9785fe-570c-402b-ac99-a8a4ce41f28c-00-2r2hl6d693x47.pike.replit.dev'],
       },
       plugins: [react()],
       define: {
