@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
             className="absolute inset-0 w-full h-full object-cover opacity-60 grayscale-[0.2]"
           >
             <source 
-              src="https://jumpshare.com/v/MeueHNhXkjHHfj2YBRLP?raw=1" 
+              src="/attached_assets/GlKJAGLPwEpdHVpE_1768772949095.mp4" 
               type="video/mp4" 
             />
             Your browser does not support the video tag.
