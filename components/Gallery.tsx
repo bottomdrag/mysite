@@ -66,7 +66,7 @@ const Gallery: React.FC = () => {
     "https://media.tenor.com/Lr0fXaYf_GkAAAAi/emote-emoji.gif",
     "https://media.tenor.com/jYyZZb7AuyQAAAAi/emote-emoji.gif",
     "https://media.tenor.com/wqoGsAHD1ucAAAAi/1.gif",
-    "https://media.tenor.com/Ic7rea5CARYAAAAi/hu-tao.gif",
+    "https://media.tenor.com/i_CpakrvJjwAAAAi/genshin-impact-hu-tao.gif",
     "https://media.tenor.com/DlDOGVVRKAUAAAAi/emote-emoji.gif"
   ];
 
