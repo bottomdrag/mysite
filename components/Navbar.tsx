@@ -48,7 +48,7 @@ const Navbar: React.FC<NavbarProps> = () => {
       clickable: true,
     },
     {
-      label: '@bottomdrag',
+      label: 'treat hu a coffee',
       icon: 'fas fa-mug-hot',
       url: 'https://ko-fi.com/bottomdrag',
       clickable: true,
